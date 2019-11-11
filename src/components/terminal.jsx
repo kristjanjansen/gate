@@ -3,8 +3,8 @@ import React, { useRef, useEffect } from "react"
 const Terminal = ({ children }) => (
   <div
     style={{
-      height: "33vh",
-      width: "66vh",
+      height: "25ch",
+      width: "80ch",
       overflow: "scroll",
       backgroundColor: "hsl(208,20%,18%)",
       fontFamily: "Cousine",
@@ -13,6 +13,7 @@ const Terminal = ({ children }) => (
       whiteSpace: "pre-wrap",
       padding: "20px",
       lineHeight: "20px",
+      borderRadius: "3px",
     }}
   >
     {children}

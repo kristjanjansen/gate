@@ -3,12 +3,20 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Typeit from "../components/typeit"
+import TerminalCmd from "../components/terminalcmd"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Typeit strings={["garden dev", ""]} />
+    <TerminalCmd
+      cmd="garden dev"
+      logs={[
+        "",
+        "<span style=color: gray>Good afternoon! Let's get your environment wired up...</span>",
+        "",
+        "🌻  Garden dashboard and API server running on http://localhost:57866",
+      ]}
+    />
     <h1>
       from source
       <br />
