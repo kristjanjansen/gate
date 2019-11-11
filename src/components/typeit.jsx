@@ -4,9 +4,9 @@ import { timingSafeEqual } from "crypto"
 
 const Typeit = ({
   strings = "",
-  speed = 50,
+  speed = 80,
   waitUntilVisible = true,
-  nextStringDelay = 50,
+  nextStringDelay = 80,
   terminate = false,
   done = () => null,
 }) => {

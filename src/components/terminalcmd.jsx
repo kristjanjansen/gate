@@ -8,7 +8,7 @@ import { random } from "../utils/utils"
 
 const TerminalCmd = ({ cmd = "", logs = [] }) => {
   const delayedList = useDelayedList(
-    logs.map(row => ({ row, delay: random(50, 500) }))
+    logs.map(row => ({ row: row || "&nbsp;", delay: random(50, 500) }))
   )
 
   const [cmdDone, setCmdDone] = useState(false)

@@ -3,7 +3,7 @@ import React, { useRef, useEffect } from "react"
 const Terminal = ({ children }) => (
   <div
     style={{
-      height: "25ch",
+      height: "35ch",
       width: "80ch",
       overflow: "scroll",
       backgroundColor: "hsl(208,20%,18%)",
