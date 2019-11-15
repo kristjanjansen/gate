@@ -27,21 +27,11 @@ const Typeit = ({
         waitUntilVisible,
         lifeLike: true,
         afterComplete: instance => {
-          //Temporary fix (afterComplete() does not emit)
           done()
           if (terminate) {
             instance.destroy(true)
           }
         },
-        // afterString: (step, queue, instance) => {
-        //   //Temporary fix (afterComplete() does not emit)
-        //   if (step[2].isLast) {
-        //     done()
-        //     if (terminate) {
-        //       instance.destroy(true)
-        //     }
-        //   }
-        // },
       }).go()
     }
   }, [container])
